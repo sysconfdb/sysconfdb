@@ -20,7 +20,7 @@ def tags():
 		if len(cookie) == 0: return []
 		return sorted(cookie.split(','))
 
-	return [ 'security', 'privacy', 'crypto' ]
+	return [ 'mobile', 'os', 'systems' ]
 
 
 def one_day():

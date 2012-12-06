@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 METHOD:PUBLISH
-PRODID:-//securityconferences.net//{{ title }}//EN
+PRODID:-//systemsconferences.net//{{ title }}//EN
 X-WR-CALNAME:{{ title }}
 
 {% for (abbreviation, description, location, dates) in events %}

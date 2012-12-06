@@ -1,0 +1,307 @@
+@font-face
+{
+	font-family: "Droid Sans";
+	src: url(DroidSans-Regular.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: "Droid Sans Bold";
+	src: url(DroidSans-Bold.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: "Muli";
+	src: url(Muli-Regular.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: "Play";
+	src: url(Play-Regular.ttf) format("truetype");
+}
+
+html
+{
+	background: #9eadc0;
+	font-family: "Droid Sans", sans-serif;
+	font-size: smaller;
+	padding: 0;
+}
+
+body
+{
+	padding: 0;
+}
+
+input[readonly]
+{
+	background: #9eadc0;
+}
+
+#header
+{
+	background: #6d5b85;
+	color: white;
+
+	border-bottom: solid 1px black;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	line-height: 1em;
+	width: 100%;
+}
+
+#content
+{
+	margin-top: 4em;
+	margin-bottom: 2em;
+
+/*	background-image: url('padlock-128.png');*/
+	background-repeat: no-repeat;
+	background-position: left 4em;
+	background-attachment: fixed;
+}
+
+#footer
+{
+	background: #6d5b85;
+	color: white;
+
+	border-top: solid 1px black;
+
+	position: fixed;
+	left: 0;
+	bottom: 0;
+
+	line-height: 1.5em;
+	padding-left: .5em;
+	width: 100%;
+}
+
+h1, h2, h3, h4, a
+{
+	font-weight: normal;
+}
+
+
+#header h1, #header h1 a
+{
+	color: white;
+	font-family: "Play";
+	position: absolute;
+	right: 0.5em;
+}
+
+#header h1 a:hover { color: #e2d7b6; }
+
+#header h2
+{
+	font-family: "Muli";
+	margin-left: 0.5em;
+}
+
+h2
+{
+	font-family: "Play";
+}
+
+#content h2
+{
+	color: #1c3553;
+	text-align: center;
+}
+
+#content a:hover
+{
+	color: #7f6b2a;
+	color: #9d8bb5;
+}
+
+#footer a
+{
+	color: #a894c2;
+}
+
+#footer a:hover
+{
+	color: #e2d7b6;
+}
+
+#footer #copyright
+{
+	float: right;
+	margin-right: 1em;
+}
+
+#content .tags
+{
+	text-align: center;
+}
+
+#skyscraper-right
+{
+	position: fixed;
+	right: 1em;
+	bottom: 2em;
+	z-index: -99;
+}
+
+a
+{
+	color: #1c3553;
+	font-family: "Droid Sans Bold";
+	text-decoration: none;
+}
+
+input
+{
+	border: 1px solid #1c3553;
+	text-align: center;
+}
+
+table.conferences, table.tags, #content .block, #content .navleft
+{
+	background: rgba(255, 255, 255, 0.8);
+	border: solid 2px #1c3553;
+}
+
+table.conferences, table.tags, #content .block
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content .navleft
+{
+	padding: .5em;
+	width: 9em;
+
+	position: fixed;
+	left: 0.5em;
+	top: 5em;
+	z-index: -99;
+}
+
+#content .block
+{
+	padding: 0.75em;
+}
+
+table.tags td.submit
+{
+	padding: 0.5em;
+	text-align: right;
+}
+
+table.conferences th, .sidebar th
+{
+	background: #1c3553;
+	color: white;
+}
+
+table.conferences a
+{
+	color: #1c3553;
+}
+
+
+table.conferences td, table.conferences th, .sidebar td
+{
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+table.conferences td.notSoon { background: #cfc; }
+table.conferences td.soon { background: #ffc; }
+table.conferences td.reallySoon { background: #fcc; }
+table.conferences td.tooLate { background: #666; }
+
+.navlinks
+{
+	font-size: smaller;
+	font-weight: bold;
+	text-align: center;
+}
+
+.sidebar
+{
+	float: right;
+	margin: 1em;
+}
+
+.sidebar .head
+{
+	text-align: center;
+}
+
+hr
+{
+	border: 0;
+	height: 2px;
+
+	background: #acf;
+	color: #acf;
+}
+
+.filters:before
+{
+	content: "Filters: ";
+	display: inline;
+	font-weight: bold;
+}
+
+.filters .tags
+{
+	font-weight: bold;
+}
+
+.ical
+{
+	background: #e2d7b6;
+	border: 1px solid #1c3553;
+	float: right;
+	font-size: smaller;
+	padding: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 20em;
+
+	position: fixed;
+	right: 1em;
+	top: 5em;
+}
+
+.emphasise
+{
+	font-size: larger;
+	font-weight: bold;
+}
+
+.warning
+{
+	background: #ffd;
+	border: 2px solid;
+	margin: 1em;
+	margin-left: 10em;
+	margin-right: 10em;
+	padding: .5em;
+	padding-left: 64px;
+}
+
+.warning:before
+{
+	content: "Warning";
+	display: block;
+	font-size: smaller;
+	font-weight: bold;
+}
+
